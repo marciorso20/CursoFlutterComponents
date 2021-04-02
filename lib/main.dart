@@ -10,24 +10,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Column(
         children: [
-          Container(
-            color: Colors.white,
-            width: 500,
-            height: 100,
-            margin: EdgeInsets.all(20),
-          ),
-          Container(
-            color: Colors.white,
-            width: 500,
-            height: 100,
-            margin: EdgeInsets.all(20),
-          ),
-          Container(
-            color: Colors.white,
-            width: 500,
-            height: 100,
-            margin: EdgeInsets.all(20),
-          ),
+          Components(),
+          Components(),
+          Components(),
           Expanded(
             child: Stack(
               children: [
@@ -65,6 +50,18 @@ class MyApp extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class Components extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      width: 500,
+      height: 100,
+      margin: EdgeInsets.all(20),
     );
   }
 }
