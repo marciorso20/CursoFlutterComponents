@@ -20,29 +20,24 @@ class MyApp extends StatelessWidget {
                   color: Colors.green,
                   margin: EdgeInsets.only(top: 10),
                 ),
-                Center(
-                  child: Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.yellow,
+                Align(
+                  alignment: Alignment.center,
+                  child: ColorRow(
+                    cor: Colors.yellow,
                   ),
                 ),
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.yellow,
-                    margin: EdgeInsets.only(left: 25),
+                  child: ColorRow(
+                    cor: Colors.yellow,
+                    margem: EdgeInsets.only(left: 25),
                   ),
                 ),
                 Align(
                   alignment: Alignment.centerRight,
-                  child: Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.yellow,
-                    margin: EdgeInsets.only(right: 25),
+                  child: ColorRow(
+                    cor: Colors.yellow,
+                    margem: EdgeInsets.only(right: 25),
                   ),
                 ),
               ],
@@ -54,6 +49,24 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class ColorRow extends StatelessWidget {
+  final Color cor;
+  final EdgeInsets margem;
+
+  ColorRow({Key key, this.cor, this.margem = null});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50,
+      width: 50,
+      color: cor,
+      margin: margem,
+    );
+  }
+}
+
+//Cards brancos
 class Components extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
