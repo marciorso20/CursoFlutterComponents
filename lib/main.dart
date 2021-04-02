@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+//Cores das rows
 class ColorRow extends StatelessWidget {
   final Color cor;
   final EdgeInsets margem;
