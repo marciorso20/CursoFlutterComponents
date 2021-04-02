@@ -1,6 +1,6 @@
 # exercicio03
 
-A new Flutter project.
+Utilizando o mesmo modelo do exercicio01. Criei dois componentes externos, um para o cards brancos e a outra para as cores, com o intuito de separar qualquer tipo de alteração nos componentes.
 
 ## Getting Started
 
